@@ -27,6 +27,26 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/Profile', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl'
+      })
+      .when('/Leaderboard', {
+        templateUrl: 'views/leaderboard.html',
+        controller: 'LeaderboardCtrl'
+      })
+      .when('/InsertData', {
+        templateUrl: 'views/insertdata.html',
+        controller: 'InsertdataCtrl'
+      })
+      .when('/CreateTeam', {
+        templateUrl: 'views/createteam.html',
+        controller: 'CreateteamCtrl'
+      })
+      .when('/Teams', {
+        templateUrl: 'views/teams.html',
+        controller: 'TeamsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
