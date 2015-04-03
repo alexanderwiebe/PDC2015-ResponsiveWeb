@@ -20,18 +20,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/Leaderboard">Leaderboard</a></li>
-          <li><a ng-href="#/Profile">Profile</a></li>
-          <li><a ng-href="#/Teams">Teams</a></li>
-          <li><a ng-href="#/About">About</a></li>
-        </ul>
-        <h3 class="text-muted">PDC 2015 SolfIt</h3>
-      </div>
 
+    <div class="container">
+      <pdc-top-menu></pdc-top-menu>
       <div ng-view=""></div>
 
       <div class="footer">
@@ -92,6 +83,7 @@
         <script src="scripts/controllers/insertdata.js"></script>
         <script src="scripts/controllers/createteam.js"></script>
         <script src="scripts/controllers/teams.js"></script>
+        <script src="scripts/directives/pdctopmenu.js"></script>
         <!-- endbuild -->
 </body>
 </html>
