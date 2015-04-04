@@ -1,10 +1,10 @@
 <div class="header">
   <ul class="nav nav-pills pull-right">
-    <li ng-class="{}" class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#/Leaderboard">Leaderboard</a></li>
-    <li><a ng-href="#/Profile">Profile</a></li>
-    <li><a ng-href="#/Teams">Teams</a></li>
-    <li><a ng-href="#/About">About</a></li>
+    <li ng-class="{active:currentPage=='home'||currentPage==''}" ng-click="setPage('home')"><a ng-href="#/">Home</a></li>
+    <li ng-class="{active:currentPage=='leaderboard'}" ng-click="setPage('leaderboard')"><a ng-href="#/Leaderboard">Leaderboard</a></li>
+    <li ng-class="{active:currentPage=='profile'}" ng-click="setPage('profile')"><a ng-href="#/Profile">Profile</a></li>
+    <li ng-class="{active:currentPage=='teams'}" ng-click="setPage('teams')"><a ng-href="#/Teams">Teams</a></li>
+    <li ng-class="{active:currentPage=='about'}" ng-click="setPage('about')"><a ng-href="#/about">About</a></li>
   </ul>
   <h3 class="text-muted">PDC 2015 SolfIt</h3>
 </div>
